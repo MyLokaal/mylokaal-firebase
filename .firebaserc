@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "mylokaal-51cdc",
+    "prod": "mylokaal-51cdc"
+  }
+}
