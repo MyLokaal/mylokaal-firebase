@@ -20,6 +20,7 @@ export const AuthContent = ({
   question,
   link,
   text,
+  fp,
   ...rest
 }) => (
   <Flex align="center" justify="center" mt={12}>
@@ -62,6 +63,11 @@ export const AuthContent = ({
         <Button type="submit" mt={4} colorScheme="teal" variant="solid">
           {type}
         </Button>
+        <Link href="/auth/forgotPassword">
+          <a>
+            <Text>Forgot Password?</Text>
+          </a>
+        </Link>
       </Stack>
       <Box d="flex" px={8}>
         <Text pr={2}>{question}</Text>

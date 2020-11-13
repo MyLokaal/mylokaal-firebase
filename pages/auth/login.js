@@ -1,4 +1,4 @@
-import { useToast } from "@chakra-ui/core";
+import { useToast, Text } from "@chakra-ui/core";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
 
@@ -34,7 +34,7 @@ const Login = () => {
       errors={errors}
       onSubmit={handleSubmit(signIn)}
       px={8}
-      py={12}
+      py={8}
       register={register}
       spacing={3}
       heading="Log in to MyLokaal"
@@ -42,6 +42,7 @@ const Login = () => {
       question="Don't have an account?"
       link="/auth/signup"
       text="Sign up"
+      fp={true}
       w="100%"
     />
   );
