@@ -41,7 +41,7 @@ function useProvideAuth() {
       });
   };
 
-  const signup = (email, password) => {
+  const signup = async (email, password) => {
     return firebase
       .auth()
       .createUserWithEmailAndPassword(email, password)
@@ -51,7 +51,7 @@ function useProvideAuth() {
       });
   };
 
-  const signout = () => {
+  const signout = async () => {
     return firebase
       .auth()
       .signOut()
@@ -60,7 +60,7 @@ function useProvideAuth() {
       });
   };
 
-  const sendPasswordResetEmail = (email) => {
+  const sendPasswordResetEmail = async (email) => {
     return firebase
       .auth()
       .sendPasswordResetEmail(email)
@@ -69,7 +69,7 @@ function useProvideAuth() {
       });
   };
 
-  const confirmPasswordReset = (password, code) => {
+  const confirmPasswordReset = async (password, code) => {
     const resetCode = code;
 
     return firebase
