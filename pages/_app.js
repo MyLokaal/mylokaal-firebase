@@ -2,6 +2,7 @@ import * as React from "react";
 import { ChakraProvider } from "@chakra-ui/core";
 import Head from "next/head";
 
+import Navbar from "../components/navbar";
 import { ProvideAuth } from "../utils/auth";
 
 const App = ({ Component, pageProps }) => (
@@ -13,6 +14,7 @@ const App = ({ Component, pageProps }) => (
     </Head>
     <ProvideAuth>
       <ChakraProvider>
+        <Navbar />
         <Component {...pageProps} />
       </ChakraProvider>
     </ProvideAuth>
