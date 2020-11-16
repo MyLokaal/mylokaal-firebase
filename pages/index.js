@@ -1,9 +1,6 @@
 import Head from "next/head";
-import { Box, Heading } from "@chakra-ui/core";
-
-export const Container = (props) => (
-  <Box w="full" maxW="1280px" mx="auto" px={6} {...props} />
-);
+import { Box } from "@chakra-ui/core";
+import { Hero, Footer, TopSellers, Map, LocalSellers } from "../components";
 
 const Home = () => {
   return (
@@ -12,15 +9,11 @@ const Home = () => {
         <title>My Lokaal</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box as="section" pt={40} pb={24}>
-        <Container>
-          <Box maxW="xl" mx="auto" textAlign="center">
-            <Heading as="h1" size="xl" fontWeight="black">
-              Find local produce, meals, and other products in your area.
-            </Heading>
-          </Box>
-        </Container>
-      </Box>
+      <Hero />
+      <LocalSellers />
+      <Map />
+      <TopSellers />
+      <Footer />
     </Box>
   );
 };

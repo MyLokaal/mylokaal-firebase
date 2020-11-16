@@ -36,23 +36,22 @@ const Login = () => {
   };
 
   return (
-    <>
-      <AuthContent
-        as="form"
-        errors={errors}
-        onSubmit={handleSubmit(signUp)}
-        px={8}
-        py={12}
-        register={register}
-        spacing={3}
-        type="Sign up"
-        question="Already have an account?"
-        link="/auth/login"
-        heading="Welcome to MyLokaal"
-        text="Log in"
-        w="100%"
-      />
-    </>
+    <AuthContent
+      as="form"
+      errors={errors}
+      onSubmit={handleSubmit(signUp)}
+      px={8}
+      py={12}
+      register={register}
+      spacing={3}
+      type="Sign up"
+      question="Already have an account?"
+      link="/auth/login"
+      heading="Welcome to MyLokaal"
+      text="Log in"
+      w="100%"
+      newUser={true}
+    />
   );
 };
 

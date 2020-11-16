@@ -66,12 +66,14 @@ function useProvideAuth() {
       .sendPasswordResetEmail(email)
       .then(() => {
         return true;
+      })
+      .catch(function (error) {
+        console.log("Something went wrong with sendPasswordResetEmail", error);
       });
   };
 
   const confirmPasswordReset = async (password, code) => {
     const resetCode = code;
-
     return firebase
       .auth()
       .confirmPasswordReset(resetCode, password)
