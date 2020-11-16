@@ -1,8 +1,13 @@
 import { Heading, Box, Flex, List, ListItem, Text } from "@chakra-ui/core";
 
 const Footer = () => (
-  <Flex py={16} justify="space-around">
-    <Box>
+  <Flex
+    py={16}
+    px={[4, 4, 0, 0]}
+    justify="space-around"
+    direction={["column", "row"]}
+  >
+    <Box pb={[6, 0]}>
       <Heading size="sm" pb={2}>
         My Lokaal
       </Heading>
@@ -10,7 +15,7 @@ const Footer = () => (
       <Text>Copyright © 2020 MyLokaal</Text>
     </Box>
     <Flex>
-      <List px={6}>
+      <List px={[0, 6]}>
         <ListItem>
           <Heading size="sm" pb={2}>
             About
@@ -21,7 +26,7 @@ const Footer = () => (
         <ListItem>{`Tearms & Conditions`}</ListItem>
         <ListItem>Privacy Policy</ListItem>
       </List>
-      <List px={6}>
+      <List px={[0, 6]}>
         <Heading size="sm" pb={2}>
           Services
         </Heading>
@@ -29,7 +34,7 @@ const Footer = () => (
         <ListItem>How to Start Selling</ListItem>
         <ListItem>Payment Method</ListItem>
       </List>
-      <List px={6}>
+      <List px={[0, 6]}>
         <Heading size="sm" pb={2}>
           Other
         </Heading>
