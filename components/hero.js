@@ -23,7 +23,7 @@ const Hero = () => {
       >
         <Box maxW="xl" mx="auto" textAlign="center" mt={6} mb={10}>
           <Heading as="h1" size="xl">
-            Find local produce, meals, and other products in your area.
+            Connecting neighbors and helping the local economy.
           </Heading>
         </Box>
 

@@ -19,7 +19,7 @@ const Footer = () => (
       <Heading size="sm" pb={2}>
         My Lokaal
       </Heading>
-      <Text pb={2}>We are a great company.</Text>
+      <Text pb={2}>We are a great company</Text>
       <Text>Copyright © 2020 MyLokaal</Text>
     </Box>
     <Divider display={{ sm: "none" }} my={4} />
