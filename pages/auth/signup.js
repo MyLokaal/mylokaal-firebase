@@ -50,6 +50,7 @@ const Login = () => {
       heading="Welcome to MyLokaal"
       text="Log in"
       w="100%"
+      newUser={true}
     />
   );
 };
