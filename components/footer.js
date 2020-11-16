@@ -1,4 +1,12 @@
-import { Heading, Box, Flex, List, ListItem, Text } from "@chakra-ui/core";
+import {
+  Divider,
+  Heading,
+  Box,
+  Flex,
+  List,
+  ListItem,
+  Text,
+} from "@chakra-ui/core";
 
 const Footer = () => (
   <Flex
@@ -7,15 +15,17 @@ const Footer = () => (
     justify="space-around"
     direction={["column", "row"]}
   >
-    <Box pb={[6, 0]}>
+    <Box>
       <Heading size="sm" pb={2}>
         My Lokaal
       </Heading>
-      <Text>We are a great company.</Text>
+      <Text pb={2}>We are a great company.</Text>
       <Text>Copyright © 2020 MyLokaal</Text>
     </Box>
-    <Flex>
-      <List px={[0, 6]}>
+    <Divider display={{ sm: "none" }} my={4} />
+
+    <Flex direction={["column", "row"]}>
+      <List spacing={2} px={[0, 6]}>
         <ListItem>
           <Heading size="sm" pb={2}>
             About
@@ -26,7 +36,9 @@ const Footer = () => (
         <ListItem>{`Tearms & Conditions`}</ListItem>
         <ListItem>Privacy Policy</ListItem>
       </List>
-      <List px={[0, 6]}>
+      <Divider display={{ sm: "none" }} my={4} />
+
+      <List spacing={2} px={[0, 6]}>
         <Heading size="sm" pb={2}>
           Services
         </Heading>
@@ -34,7 +46,9 @@ const Footer = () => (
         <ListItem>How to Start Selling</ListItem>
         <ListItem>Payment Method</ListItem>
       </List>
-      <List px={[0, 6]}>
+      <Divider display={{ sm: "none" }} my={4} />
+
+      <List spacing={2} px={[0, 6]}>
         <Heading size="sm" pb={2}>
           Other
         </Heading>
