@@ -23,7 +23,7 @@ const Hero = () => {
       >
         <Box maxW="xl" mx="auto" textAlign="center" mt={6} mb={10}>
           <Heading as="h1" size="xl">
-            Connecting neighbors and helping the local economy.
+            Buy Lokaal - Sell Lokaal
           </Heading>
         </Box>
 

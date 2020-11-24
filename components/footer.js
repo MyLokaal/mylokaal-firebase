@@ -9,17 +9,15 @@ import {
 } from "@chakra-ui/core";
 
 const Footer = () => (
-  <Flex
-    py={16}
-    px={[4, 4, 0, 0]}
-    justify="space-around"
-    direction={["column", "row"]}
-  >
+  <Flex py={16} px={4} justify="space-around" direction={["column", "row"]}>
     <Box>
       <Heading size="sm" pb={2}>
         My Lokaal
       </Heading>
-      <Text pb={2}>We are a great company</Text>
+      <Text pb={2}>
+        We help communities grow and reduce enviromental impact by encouraging
+        to buy local.
+      </Text>
       <Text>Copyright © 2020 MyLokaal</Text>
     </Box>
     <Divider display={{ sm: "none" }} my={4} />
