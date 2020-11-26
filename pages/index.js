@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Box } from "@chakra-ui/core";
-import { Hero, Footer, TopSellers, Map, LocalSellers } from "../components";
+import { Hero, Footer, TopSellers, About, LocalSellers } from "../components";
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
       </Head>
       <Hero />
       <LocalSellers />
-      <Map />
+      <About />
       <TopSellers />
       <Footer />
     </Box>

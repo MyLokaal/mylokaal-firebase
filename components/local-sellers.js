@@ -4,7 +4,7 @@ const LocalSellers = () => {
   const data = {
     title: "Local Sellers",
     description:
-      "No matter what skill or trade you have to offer, My Lokaal makes it simple and secure to sell online. You have full control of your products, prices and communication.",
+      "No matter what skill or trade you have to offer, MyLokaal makes it simple and secure to sell online. You have full control of your products, prices and communication.",
     cards: [
       {
         title: "Food",
