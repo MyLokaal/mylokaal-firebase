@@ -3,6 +3,6 @@ import Footer from "./footer";
 import Hero from "./hero";
 import LocalSellers from "./local-sellers";
 import TopSellers from "./top-sellers";
-import Map from "./map";
+import About from "./about";
 
-export { Cards, Footer, Hero, LocalSellers, TopSellers, Map };
+export { Cards, Footer, Hero, LocalSellers, TopSellers, About };
