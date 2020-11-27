@@ -12,6 +12,7 @@ const Cards = ({ title, description, cards, borderRadius, textColor, bg }) => (
       color={textColor}
       direction={["column", "column", "row", "row"]}
       px={[0, 2, 4, 10]}
+      justify="center"
     >
       {cards.map((card) => (
         <Box key={card.title} px={[0, 2, 4, 12]} pb={[16, 16, 0, 0]}>
@@ -25,7 +26,9 @@ const Cards = ({ title, description, cards, borderRadius, textColor, bg }) => (
           <Heading size="lg" pt={5} pb={3}>
             {card.title}
           </Heading>
-          <Text px={[0, 0, 0, 10]}>{card.text}</Text>
+          <Text px={[0, 0, 0, 10]} maxW={400}>
+            {card.text}
+          </Text>
         </Box>
       ))}
     </Flex>

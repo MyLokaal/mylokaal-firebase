@@ -12,9 +12,9 @@ const About = () => (
           What is MyLokaal?
         </Heading>
         <Text>
-          MyLokaal connects people with locally made products and services. Our
-          community of local buyers and sellers empower their local economy and
-          reduce local waste and pollution.
+          MyLokaal connects people with locally made products and services. When
+          you buy local, money stays local, and it strengthens the local economy
+          while reducing waste and pollution.
         </Text>
       </Box>
       <Box w={["full", "full", "full", 400]} textAlign="left">
@@ -22,9 +22,10 @@ const About = () => (
           What is a Seller?
         </Heading>
         <Text>
-          What is a Seller? If you have a skill or expertise, you can earn money
-          by sharing this trade with your local community. As a Seller, you have
-          the tools to set your product, your price, and your schedule.
+          Anyone can sell on MyLokaal. If you have a skill or expertise, you can
+          earn money by sharing your trade online. As a seller, you have the
+          tools to list your products, set your prices and communicate with
+          customers.
         </Text>
       </Box>
     </SimpleGrid>
