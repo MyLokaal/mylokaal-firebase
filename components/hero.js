@@ -16,17 +16,18 @@ const Hero = () => {
       justify="center"
       direction="column"
       textAlign="cnter"
-      w="full"
       px={[4, 0]}
       bgImage="url('/images/main.png')"
       bgSize="cover"
-      height={["full", 292, 292, 551]}
+      bgPosition="50%"
+      height={551}
+      mb={5}
     >
       <Flex
         direction={["column", "row"]}
         w={["full", "600px"]}
         bg="white"
-        mt={210}
+        mt={[226, 226, 202, 230]}
       >
         <InputGroup>
           <InputLeftAddon
