@@ -1,5 +1,5 @@
 import Cards from "./cards";
-import Footer from "./footer";
+import Footer from "./Footer/index";
 import Hero from "./hero";
 import LocalSellers from "./local-sellers";
 import TopSellers from "./top-sellers";

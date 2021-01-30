@@ -9,4 +9,8 @@ module.exports = {
     appId: "1:688246744618:web:7621da848f4f5bad5a0553",
     measurementId: "G-CBBJ9L86JX",
   },
+  i18n: {
+    locales: ["en-US", "nl-NL", "ka-GE"],
+    defaultLocale: "en-US",
+  },
 };

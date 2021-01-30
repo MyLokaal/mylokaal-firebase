@@ -7,6 +7,7 @@ import {
   ListItem,
   Text,
 } from "@chakra-ui/core";
+import FooterLangControl from "./FooterLangControl";
 
 const Footer = () => (
   <Flex py={16} px={4} justify="space-around" direction={["column", "row"]}>
@@ -53,6 +54,8 @@ const Footer = () => (
         <ListItem>Contact Us</ListItem>
         <ListItem>Countries</ListItem>
       </List>
+
+      <FooterLangControl />
     </Flex>
   </Flex>
 );

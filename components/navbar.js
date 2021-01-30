@@ -6,11 +6,13 @@ import {
   useColorMode,
   IconButton,
 } from "@chakra-ui/core";
+import { useTranslation as t } from "../utils/hooks";
 import { useState } from "react";
 
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import { useAuth } from "../utils/auth";
+import FooterLangControl from "./Footer/FooterLangControl";
 
 const MenuItems = ({ mt, mr, size, path, areaLabel, children }) => (
   <Link href={path}>
@@ -43,7 +45,7 @@ const Navbar = () => {
     >
       <Box>
         <MenuItems size="md" path="/" ariaLabel="MyLokaal, Back to homepage">
-          My Lokaal
+          {t("home_title")}
         </MenuItems>
       </Box>
       <Box
@@ -79,6 +81,7 @@ const Navbar = () => {
           </Button>
         ) : (
           <>
+            <FooterLangControl />
             <MenuItems
               size="sm"
               path="/auth/login"
