@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Box } from "@chakra-ui/core";
-import { Hero, Footer, TopSellers, About, LocalSellers } from "../components";
+import { Hero, LocalSellers, TopSellers, About } from "../components/Home";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (

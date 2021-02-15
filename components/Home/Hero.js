@@ -4,7 +4,6 @@ import {
   InputGroup,
   InputRightElement,
   Input,
-  Button,
   InputLeftAddon,
 } from "@chakra-ui/core";
 import { SearchIcon } from "@chakra-ui/icons";

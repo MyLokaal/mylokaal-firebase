@@ -1,6 +1,6 @@
 import { useColorMode, Box } from "@chakra-ui/core";
 
-const Logo = (props) => {
+const LogoIcon = (props) => {
   return (
     <Box
       as="svg"
@@ -86,4 +86,4 @@ const Logo = (props) => {
   );
 };
 
-export default Logo;
+export default LogoIcon;

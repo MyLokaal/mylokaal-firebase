@@ -2,7 +2,7 @@ import * as React from "react";
 import { ChakraProvider } from "@chakra-ui/core";
 import Head from "next/head";
 
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import { ProvideAuth } from "../utils/auth";
 
 const App = ({ Component, pageProps }) => (

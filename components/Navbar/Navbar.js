@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/core";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import Link from "next/link";
-import { useAuth } from "../utils/auth";
+import { useAuth } from "../../utils/auth";
 
 const Navbar = () => {
   const { userId, signout } = useAuth();
