@@ -36,20 +36,16 @@ const FooterLangControl = () => {
     <Box mr="3">
       <form>
         <fieldset>
-          {/* <label htmlFor="language">Language</label> */}
-          <div>
-            <Select
-              id="language"
-              value={lang}
-              onChange={(e) => switchLocale(e.currentTarget.value, location)}
-            >
-              {LANGUAGES.map((l) => (
-                <option key={l.value} value={l.value}>
-                  {l.label}
-                </option>
-              ))}
-            </Select>
-          </div>
+          <Select
+            value={lang}
+            onChange={(e) => switchLocale(e.currentTarget.value, location)}
+          >
+            {LANGUAGES.map((lang) => (
+              <option key={lang.value} value={lang.value}>
+                {lang.label}
+              </option>
+            ))}
+          </Select>
         </fieldset>
       </form>
     </Box>

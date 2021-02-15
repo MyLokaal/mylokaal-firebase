@@ -1,7 +1,7 @@
 import * as React from "react";
 import { IntlProvider } from "react-intl";
+import { DefaultSeo } from "next-seo";
 import { useRouter } from "next/router";
-import Head from "next/head";
 import { ChakraProvider } from "@chakra-ui/core";
 
 import Navbar from "../components/navbar";
@@ -16,17 +16,29 @@ const App = ({ Component, pageProps }) => {
   const localeCopy = locales[parsedLocale];
   const messages = localeCopy[pathname];
 
+  const head = {
+    titleTemplate: "%s | My Lokaal",
+    additionalMetaTags: [
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1",
+      },
+    ],
+    openGraph: {
+      type: "website",
+      locale: "en_US",
+      url: "https://mylokaal.com/",
+      site_name: "mylokaal",
+    },
+  };
+
   return (
     <IntlProvider
-      locale={locale}
+      parsedLocale
       defaultLocale={defaultLocale}
       messages={messages}
     >
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta title="MyLokaal | Find local produce, meals, and other products in your area." />
-        <link rel="icon" sizes="96x96" href="/favicons/favicon.ico" />
-      </Head>
+      <DefaultSeo {...head} />
       <ProvideAuth>
         <ChakraProvider>
           <Navbar />
