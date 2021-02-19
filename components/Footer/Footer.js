@@ -6,7 +6,7 @@ import {
   List,
   ListItem,
   Text,
-} from "@chakra-ui/core";
+} from "@chakra-ui/react";
 
 const Footer = () => (
   <Flex py={16} px={4} justify="space-around" direction={["column", "row"]}>

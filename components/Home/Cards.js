@@ -1,4 +1,4 @@
-import { Box, Heading, Flex, Image, Text } from "@chakra-ui/core";
+import { Box, Heading, Flex, Image, Text } from "@chakra-ui/react";
 
 const Cards = ({ title, description, cards, borderRadius, textColor, bg }) => (
   <Box maxW="full" py={16} px={[4, 4, 0, 0]} align="center" bg={bg}>

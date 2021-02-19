@@ -5,8 +5,9 @@ import {
   IconButton,
   Button,
   useColorMode,
-} from "@chakra-ui/core";
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+} from "@chakra-ui/react";
+import { RiMoonFill } from "react-icons/ri";
+import { FiSun } from "react-icons/fi";
 import Link from "next/link";
 import { useAuth } from "../../utils/auth";
 
@@ -59,7 +60,7 @@ const Navbar = () => {
             ml="2"
             fontSize="20px"
             onClick={toggleColorMode}
-            icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+            icon={colorMode === "light" ? <RiMoonFill /> : <FiSun />}
           />
         </Flex>
       </Flex>

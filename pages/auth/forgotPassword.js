@@ -10,7 +10,7 @@ import {
   Flex,
   Box,
   Stack,
-} from "@chakra-ui/core";
+} from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
 

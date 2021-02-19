@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ChakraProvider } from "@chakra-ui/core";
+import { ChakraProvider } from "@chakra-ui/react";
 import Head from "next/head";
 
 import Navbar from "../components/Navbar";

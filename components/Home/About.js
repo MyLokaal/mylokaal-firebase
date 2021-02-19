@@ -1,4 +1,4 @@
-import { SimpleGrid, Box, Heading, Text } from "@chakra-ui/core";
+import { SimpleGrid, Box, Heading, Text } from "@chakra-ui/react";
 
 const About = () => (
   <Box maxW="full" px={4} py={16} my={10} align="center">

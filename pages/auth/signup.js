@@ -1,8 +1,8 @@
-import { useToast, Heading } from "@chakra-ui/core";
+import { useToast } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
 
-import { AuthContent } from "../../components/auth";
+import AuthContent from "../../components/Auth";
 import { useAuth } from "../../utils/auth";
 
 const Login = () => {

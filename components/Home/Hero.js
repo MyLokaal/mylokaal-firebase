@@ -5,8 +5,8 @@ import {
   InputRightElement,
   Input,
   InputLeftAddon,
-} from "@chakra-ui/core";
-import { SearchIcon } from "@chakra-ui/icons";
+} from "@chakra-ui/react";
+import { BsSearch } from "react-icons/bs";
 
 const Hero = () => {
   return (
@@ -48,7 +48,7 @@ const Hero = () => {
             children={<Heading size="sm">Near</Heading>}
           />
           <Input type="text" placeholder="Cole Bay, St Maarten" size="md" />
-          <InputRightElement pointerEvents="none" children={<SearchIcon />} />
+          <InputRightElement pointerEvents="none" children={<BsSearch />} />
         </InputGroup>
       </Flex>
     </Flex>

@@ -12,10 +12,10 @@ import {
   Text,
   InputGroup,
   InputRightElement,
-} from "@chakra-ui/core";
+} from "@chakra-ui/react";
 import Link from "next/link";
 
-export const AuthContent = ({
+const AuthContent = ({
   register,
   errors,
   heading,
@@ -146,3 +146,5 @@ export const AuthContent = ({
     </Flex>
   );
 };
+
+export default AuthContent;

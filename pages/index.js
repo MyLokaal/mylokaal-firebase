@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Box } from "@chakra-ui/core";
+import { Box } from "@chakra-ui/react";
 import { Hero, LocalSellers, TopSellers, About } from "../components/Home";
 import Footer from "../components/Footer";
 

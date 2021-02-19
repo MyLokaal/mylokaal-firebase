@@ -1,4 +1,4 @@
-import { useColorMode, Box } from "@chakra-ui/core";
+import { useColorMode, Box } from "@chakra-ui/react";
 
 const LogoIcon = (props) => {
   return (
