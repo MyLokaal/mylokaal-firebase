@@ -1,5 +1,7 @@
-import { Container } from "@chakra-ui/react";
+import SearchLayout from "../components/Search";
 
-const Search = () => <Container>SEARCH</Container>;
+const Search = () => {
+  return <SearchLayout />;
+};
 
 export default Search;
